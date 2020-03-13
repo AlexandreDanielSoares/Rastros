@@ -10,13 +10,13 @@ int jogar (ESTADO *e, COORDENADA c){
 		(e -> tab[c.linha][c.coluna] == PRETA )) return 0;
     else {
        if (e->jogador_atual == 2){
-	       // Jogada anterior Caso seja jogador 2
-       		e->jogador_atual = 1;
-       		e->num_jogadas ++;
+	  // Jogada anterior Caso seja jogador 2
+          e->jogador_atual = 1;
+       	  e->num_jogadas ++;
        }
        else{
-	// Jogada anterior Caso seja jogador 1
-       	e->jogador_atual ++;
+	   // Jogada anterior Caso seja jogador 1
+       	   e->jogador_atual ++;
        }
        e->tab[x][y] = PRETA;
        e->tab[c.linha][c.coluna] = BRANCA;
