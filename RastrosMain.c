@@ -18,7 +18,7 @@ ESTADO *inicializar_estado (){
 			t[i][i1] = VAZIO;
     t[3][4] = BRANCA;
 	ESTADO e = {
-		tab: t,
+		tab: t,// DA ERROR AO COMPILAR NAO SEI PQ
 		centro: c,
 		jogadas: j,
 		num_jogadas: 1,
